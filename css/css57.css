@@ -1,0 +1,14 @@
+
+html, body{
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background: url(https://danviet.mediacdn.vn/upload/1-2019/images/2019-01-14/anh-1-1547450760-width650height813.jpg) no-repeat right top / contain  padding-box ;  
+    border: 20px dashed red;
+    padding: 20px;
+
+    
+    
+}

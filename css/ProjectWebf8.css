@@ -1,0 +1,347 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;   
+}
+/* common */
+
+.clear{
+    clear: both;
+}
+.opacity{
+    opacity: 0.6;
+}
+.row{
+    margin-left: -16px;
+    margin-right: -16px;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+
+/*  */
+#main {
+  
+    
+}
+#header {
+    --height:46px;
+    height: var(--height);
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+   
+}
+#nav{
+    display: inline-block;
+}
+#nav li{
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+}
+#nav >li> a{
+    line-height: var(--height);
+    text-align: center;
+    text-transform: uppercase;
+}
+#nav li:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav .subnav li:hover{
+    display: block;
+}
+#nav .subnav{
+    background-color: #ffffff;
+    display: none;
+    position: absolute;
+    top: var(--height);
+    left: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+#nav .subnav a{
+    line-height: var(--height);
+    text-align: center;
+    color: #000;
+}
+#nav li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#header .search-btn
+{
+    
+    
+    float: right;
+    padding: 0px 21px;
+    cursor: pointer;
+    
+}
+#header .search-btn:hover
+{
+    background-color: red;
+}
+#header .search-icon
+{
+    line-height: 46px;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+    
+
+#slider {
+    padding-top: 50%;
+    margin-top: 46px;
+    position: relative;
+    background: url(../img/slider/band\ nhac\ rock\ \(1\).jpg) top center /cover no-repeat;
+    opacity: 0.6;
+}
+#slider .telcontent{
+    position: absolute;
+    bottom: 0;
+    padding: 47px;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#slider .telcontent .text-heading{
+    margin-bottom: 25px;
+}
+#content {
+    
+    
+    display: block;
+    background-color: #ffffff;
+    max-width: 2000px;
+
+    
+}
+#content .contentsection{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    
+}
+#content .contentsection .headingcontent{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-size: 30px;
+    
+    
+}
+#content .contentsection .subheadingcontent{
+    text-align: center;
+    margin: 15px 0px;
+    font-style: italic;
+    opacity: 0.6;
+    padding: 8px 16px;
+    
+}
+#content .contentsection .aboutcontent{
+    font-size: 15px;
+    margin: 15px 0px;
+    text-align: justify;
+    line-height: 1.4;
+}
+#content .members-list{
+    margin-top:48px ;
+    max-width: 800px;
+    margin-bottom: 90px;
+    
+    border-radius: 5px;
+    padding: 32px 0px;
+   
+}
+
+#content .members-list .member
+{   
+    
+    float: left;
+    text-align: center;
+    
+    width: calc(100%/3);
+
+    
+}
+#content .members-list .member-name{
+    font-size: 15px;
+    
+}
+#content .member-img
+{
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.background-tour{
+    background-color: #000;
+}
+.background-tour .Month-Booking{
+    list-style: none;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.Month-Booking li{
+    border-bottom:  1px solid #ddd;
+    padding: 8px 16px;
+}
+.text-white{
+    color: white !important;
+}
+.Month-Booking .sold{
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    padding: 3px 8px;
+}
+.Month-Booking .quantity{
+    text-align: center;
+    float: right;
+    padding: 8px 8px;
+    line-height: 100%;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: -5px;
+}
+.tour-place {
+    padding: 32px 8px;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    width: 800px;
+}
+.tour-place .place-img {
+    display: block;
+    width: 100%;
+    
+    margin-bottom: 16px;
+    padding: 0px 8px;
+    
+
+}
+.tour-place .place-img img{
+    width: 100%;
+    
+}
+.tour-place .place-img a{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font: 15px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: inline-block;
+}
+.tour-place b,
+.tour-place p{
+    margin: 16px 16px;
+}
+.tour-place .information
+{
+    background-color: white;
+    
+}
+
+#footer {
+    
+}
+.modal{
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal .modal-container{
+    width: 900px;
+    max-width: calc(100%-10%);
+    background-color: #fff;
+    min-height: 200px;
+    position: relative;
+}
+.modal .modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 12px;
+    color: #fff;
+}
+.modal-container header{
+    font-size: 32px;
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    
+}
+.modal .modal-body{
+    padding: 16px 16px;
+}
+.modal-label{
+    display: block;
+    font-size: 15px;
+}
+.modal-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+}
+.buytickets{
+   display: block;
+    background-color: #009688;
+    width: 100%;
+    height: 56px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.buytickets:active{
+    background-color: #ccc;
+}
+.modal-help{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}

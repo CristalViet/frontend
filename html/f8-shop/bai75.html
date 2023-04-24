@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>F8-Shop</title>
+        <meta charset="UTF-8">
+        <style>
+
+            .box{
+                --height:100px;
+                height: var(--height);
+                background-color: rgb(100, 100, 100);
+              
+                
+                display: flex;
+                /* align-items: center;
+                justify-content: space-evenly; */
+                
+                
+            }
+            h3{
+                margin: auto;
+               
+                position: relative;
+
+            }
+            h3::after{
+                position: absolute;
+                content: "";
+                border: 3px solid #9e2222;
+                height: 10px;
+                left : -10px    ;
+                top: 50%;
+                transform: translateY(-50%);
+
+
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <h3>Vi tính Sunam</h3>
+          
+        </div>
+    </body>
+</html>

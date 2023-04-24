@@ -1,0 +1,21 @@
+#primary-heading
+{
+    color: red;
+}
+/* .p1-normal.p2-red
+{
+    color:darkblue;
+    text-decoration: line-through;
+} */
+/* .box .p2-fater
+{
+    color :brown;
+}
+div.box p
+{
+    color : darkmagenta;
+} */
+p.p1-normal.p2-red ~ p{
+    
+    text-decoration: line-through;
+}

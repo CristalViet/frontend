@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            html{
+                margin: 0;
+                padding: 0;
+            }
+            .box{
+                width: 120px;
+                height: 120px;
+               
+               
+                text-align: center;
+                margin: 10px;
+                
+            }
+            
+            .box1::after{
+                content: "Hello" ;
+                margin: 10px;
+                display: block;
+                padding: 10px;
+                background-color: red;
+                box-sizing: 120px;
+            
+            }
+            .box2::after{
+                content: "Box2";
+                margin: 10px;
+                display: block;
+                padding: 16px;
+                border: 10px solid #ccc;
+                background-color: cyan;
+                box-sizing: 120px;
+              
+                
+               
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        
+    </body>
+</html>
